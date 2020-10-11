@@ -68,10 +68,8 @@ class Dog
     if !dog
       self.create(name: name, breed: breed)
     else
-      self.new_from_db(row)
-      
+      self.new_from_db(dog)
     end
-    dog
   end 
   
   def self.find_by_name(name)
